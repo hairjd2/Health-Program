@@ -2,7 +2,9 @@
 #include "Food_Item.h"
 
 int main() {
-    Food_Item apple = Food_Item("apple");
-    std::cout << apple.getName();
+    Food_Item apple("apple", 100);
+    apple.setFiber(4);
+    apple.setCarbs(14);
+    apple.listProperties();
     return 0;
 }
